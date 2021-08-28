@@ -21,6 +21,8 @@ RUN chown -R node:root /home/node/app
 
 USER 1000
 
+RUN mkdir /myvol
+
 RUN echo "hello world" > /home/node/app/greeting
 VOLUME /home/node/app
 
