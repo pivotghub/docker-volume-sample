@@ -8,6 +8,6 @@ RUN mkdir ${APP_ROOT} && \
     
 RUN echo "hello world" > ${APP_ROOT}/greeting
 
-VOLUME ${APP_ROOT}
+VOLUME ["/searchVolume"]
 
 CMD ["sh", "-c", "tail -f /dev/null"]
